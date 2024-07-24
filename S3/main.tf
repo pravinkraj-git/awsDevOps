@@ -1,5 +1,14 @@
 provider "aws" {
+<<<<<<< HEAD
   region = "ap-south-1"  # Specify the AWS region where you want to create the bucket
+  alias = "primary"
+  region = "eu-west-2"  # Specify the AWS region where you want to create the bucket
+}
+
+provider "aws" {
+  alias = "secondary"
+  region = "eu-west-2"  # Specify the AWS region where you want to create the bucket
+>>>>>>> 3ed8b56 (alias included primary and secondary)
 }
 
 resource "aws_s3_bucket" "example_bucket" {
