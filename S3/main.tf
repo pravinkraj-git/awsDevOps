@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-2"  # Specify the AWS region where you want to create the bucket
+  region = "ap-south-1"  # Specify the AWS region where you want to create the bucket
 }
 
 resource "aws_s3_bucket" "example_bucket" {
