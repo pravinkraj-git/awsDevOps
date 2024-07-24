@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-2"  # Specify the AWS region
+  region = "eu-south-1"  # Specify the AWS region
 }
 
 resource "aws_instance" "learning_instance" {
