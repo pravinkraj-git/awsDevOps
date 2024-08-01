@@ -1,10 +1,8 @@
 provider "aws" {
-  alias = "primary"
   region = "ap-south-1"  # Specify the AWS region where you want to create the bucket
 }
 
 provider "aws" {
-  alias = "secondary"
   region = "eu-west-2"  # Specify the AWS region where you want to create the bucket
 }
 
