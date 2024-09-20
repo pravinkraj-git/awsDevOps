@@ -1,0 +1,6 @@
+1. Change the line number 25 = equal ami to you specified region, for example if you are using south east region please use that AMI code
+
+2. change the line nuber 27 = give your personal key pair (pem key)
+
+3. Change the line number 4. : specifiy the *.pem key location which is on your local laptop
+
