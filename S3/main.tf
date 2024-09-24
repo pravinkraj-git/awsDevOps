@@ -1,25 +1,8 @@
-provider "aws" {
-  region = "ap-south-1"  # Specify the AWS region where you want to create the bucket
-}
-
-provider "aws" {
-  region = "eu-west-2"  # Specify the AWS region where you want to create the bucket
-}
-
-resource "aws_s3_bucket" "example_bucket" {
-  bucket = "my-unique-bucket-name"  # Replace with your unique bucket name
+resource "aws_s3_bucket" "terraform_state_bucket" {
+  bucket = var.bucket_name  # Referencing the variable defined in terraform.tfvars
+  acl    = "private"
 
   tags = {
-    Name        = "MyBucket"
-    Environment = "Dev"
+    Name = "TerraformStateBucket"
   }
-}
-
-resource "aws_s3_bucket_acl" "example_bucket_acl" {
-  bucket = aws_s3_bucket.example_bucket.bucket
-  acl    = "private"
-}
-
-output "outfi" {
-  outfile 
 }
