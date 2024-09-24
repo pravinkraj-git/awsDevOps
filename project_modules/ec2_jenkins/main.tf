@@ -49,6 +49,7 @@ resource "null_resource" "empty" {
   
   provisioner "remote-exec" {
     inline = [
+      "sudo yum install dos2unix -y",
       "sudo dos2unix /tmp/jenkins_install.sh",
       "sudo chmod +x /tmp/jenkins_install.sh",
       "sudo sh /tmp/jenkins_install.sh"
